@@ -1,0 +1,76 @@
+*{margin:0px;
+}
+
+header{
+    background-image: url(../rendu-2eme-semaine-cheimacherni-jpg/assets/image-header.png);
+    background-size:cover;
+    min-height: 120vh;
+}
+nav{
+    text-align: right;
+    height:20px
+}
+nav a{
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-family:"DM Sans"
+}
+img{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.divhero{
+    color: white;
+}
+
+.p1{
+    font-size: 60px;
+    font-family:"DM Sans"
+}
+h1{
+    font-size: 165px;
+    font-family:"DM Sans"
+}
+.hero{
+    height: 798px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1{
+    background-color: black;
+    color:white;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family:"DM Sans"
+}
+
+.a2{
+    background-color: white;
+    color: black;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family:"DM Sans"
+}
+
+.p2{
+    font-size :30px;
+    font-family:"DM Sans"
+}
+
+.divheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
