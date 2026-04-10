@@ -6,6 +6,9 @@ header{
     background-size:cover;
     min-height: 120vh;
 }
+body{
+    margin-right: 0px;
+}
 nav{
     text-align: right;
     height:20px
@@ -26,11 +29,13 @@ img{
 
 .p1{
     font-size: 60px;
-    font-family:"DM Sans"
+    font-family:"DM Sans";
+    width: fit-content;
 }
 h1{
     font-size: 165px;
-    font-family:"DM Sans"
+    font-family:"DM Sans";
+    width: fit-content;
 }
 .hero{
     height: 798px;
@@ -44,28 +49,39 @@ h1{
     background-color: black;
     color:white;
     padding:10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 5px;
     text-decoration: none;
-    font-family:"DM Sans"
+    font-family:"DM Sans";
+    font-size: 20px;
 }
 
 .a2{
     background-color: white;
     color: black;
     padding:10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 5px;
     text-decoration: none;
-    font-family:"DM Sans"
+    font-family:"DM Sans";
+    font-size: 20px;
+    margin-left: 30px;
 }
 
 .p2{
     font-size :30px;
-    font-family:"DM Sans"
+    font-family:"DM Sans";
+    width: fit-content;
+    text-align: left;
 }
+.divhero2{
+    width: fit-content;
+    text-align: left;
+    margin-top: 50px;
+}
+
 
 .divheader{
     display: flex;
@@ -73,4 +89,238 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin-top: 0px;
+}
+.section1{
+    background-color: black;
+    color: white;
+    font-family: "DM Sans";
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    margin:auto
+}
+h2{
+    font-size: 38px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.section1 p{
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.section2 img{
+    margin:0px;
+}
+.section3{
+    background-color: black;
+    color: white;
+    font-family: "DM Sans";
+    height: 900px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+    margin:auto
+}
+.section3 ul{
+    list-style: none;
+    font-size: 28px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 700px;
+    margin-bottom: 70px;
+}
+.section3 h2{
+    margin:0px;
+    margin-bottom: 50px;
+}
+.section3 a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+.section3 li{
+    border-bottom-style: dashed;
+    padding:5px
+}
+.li1{
+    border-top-style: dashed
+}
+.section4{
+    background-image: url(assets/banniere-logo.png);
+    background-size:cover;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section5{
+    background-color: black;
+    color: white;
+    height: 800px;
+    font-family: "DM Sans";
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+.section5 ul{
+    list-style: none;
+    padding:0px
+}
+input,label {
+  margin: 0.4rem 0;
+}
+label {
+    font-size: 12px;
+    display: block;
+  font:1rem
+}
+input{
+    margin:0px;
+    background-color: #f3eaea4a;
+    border-style: none;    
+    width: 600px;
+    height: 25px;
+}
+.section5 h2{
+    font-size: 30px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+.section5 a{
+    color: white;
+    font-family: "DM Sans";
+}
+button{
+    background-color: white;
+    color: black;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family:"DM Sans";
+    border-style: none;
+}
+input[type="message"] {
+    height: 250px;
+}
+div {
+    margin-top: 25px;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.div2{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 0px;
+}
+.lienfooter{
+    margin:0px;
+    font-family: "DM SANS";
+    margin-right: 20px;
+}
+.lienfooter a{
+    text-decoration: none;
+    color: black;
+}
+
+.lienfooter a:not(:last-child)::after {
+  content: " •";
+  margin-left: 6px;
+}
+
+.div2 p{
+    font-family: "DM SANS";
+    margin-left: 20px;
+}
+div{
+    margin:0px;
+}
+.div1{
+    background-color: black;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.div1 p{
+    font-size: 20px;
+    font-family: "DM Sans";
+    padding-left: 0px;
+}
+.div1 a{
+    font-size: 20px;
+    font-family: "DM Sans";
+    color: white;
+}
+
+.button2{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "DM Sans";
+    border-color: white;
+    border-style: double;
+}
+input.input2 {
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+}
+.newsletter{
+    font-family: "DM Sans";
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+.div3{
+    margin-top: 30px;
+}
+form {
+    text-align: left;
+}
+
+form li{
+    list-style: none;
+    text-align: left;
+}
+form ul{
+    text-align: left;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    margin-left: 40px;
+    margin-right: 40px;
 }
