@@ -6,27 +6,43 @@ header{
     background-size:cover;
     min-height: 120vh;
 }
+/* Correction : on a déjà utilisé * {margin:0px;} donc rappeler le margin:0px sur body en plus est inutile. */
 body{
     margin-right: 0px;
 }
+
+/* Correction : Est ce que mettre ces styles sur la nav sont utiles ? 
+En priorité, on préférera utiliser le display:flex; pour placer les éléments.
+Est ce que la height est vraiment utile ?*/
 nav{
     text-align: right;
-    height:20px
-}
+    height:20px;
+} 
+
+/* Correction : afin d'assurer la responsivité du site, on évite de mettre des margin entre les éléments.
+On préferera utiliser le display: flex; sur le parent et utiliser la propriété css "gap" */
 nav a{
     margin-right: 30px;
     color: white;
     text-decoration: none;
     font-family:"DM Sans"
 }
+
+/* Correction : Pourquoi rajouter une margin-top sur l'image ? Quel objectif ? */
+/* Correction : Tu utilises margin-left sur l'image et margin-right sur les nav a. 
+On préférera dans ce cas utiliser margin directement sur le parent de nav et img : div-header.  */
 img{
     margin-left: 30px;
     margin-top: 5px;
-}
+} 
+
+/* Correction : On va préférer mettre la color: white; sur la section pour éviter de rajouter un appel de classe dans le css. */
 .divhero{
     color: white;
 }
 
+/* Correction : si la font-family s'applique à tous les éléments d'une div, autant mettre la font-family sur la div directement. */
+/* Correction : Est ce que mettre la width à fit-content est utile ici ? */
 .p1{
     font-size: 60px;
     font-family:"DM Sans";
@@ -37,6 +53,12 @@ h1{
     font-family:"DM Sans";
     width: fit-content;
 }
+
+/* Correction : Combien d'élément contient hero ? 
+Est ce que c'est donc utile de préciser une flex-direction ?
+Par défaut la flex-direction est à row --> axe principale = horizontal
+justify-content permet de déplacer selon l'axe principale (horizontale par défaut)
+align-items permet de déplacer selon l'axe secondaire (vertical par défaut)*/
 .hero{
     height: 798px;
     display: flex;
@@ -48,6 +70,8 @@ h1{
 .a1{
     background-color: black;
     color:white;
+    /* Correction : Tu peux mettre plusieurs paramètres dans la propriété padding.
+    padding: 10px 30px; (padding vertical = 10px et horizontal = 30px)*/
     padding:10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -60,6 +84,7 @@ h1{
 .a2{
     background-color: white;
     color: black;
+    /* Correction : Corriger le padding. */
     padding:10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -67,6 +92,7 @@ h1{
     text-decoration: none;
     font-family:"DM Sans";
     font-size: 20px;
+    /* Correction : On préferera utiliser les gap pour séparer deux éléments frère et soeur. */
     margin-left: 30px;
 }
 
@@ -74,15 +100,19 @@ h1{
     font-size :30px;
     font-family:"DM Sans";
     width: fit-content;
+    /* Correction : Est ce que text-align est utile ici */
     text-align: left;
 }
+
+/* Correction : text-align et width inutile.  */
 .divhero2{
     width: fit-content;
     text-align: left;
+    /* Correction : Plutôt que d'utiliser des margins, on préférera utiliser des gap définis par l'élément parent. */
     margin-top: 50px;
 }
 
-
+/* Correction : margin-top inutile */
 .divheader{
     display: flex;
     flex-direction: row;
@@ -102,6 +132,9 @@ h1{
     gap:10px;
     margin:auto
 }
+
+/* Correction : Tu as dupliqué les propriétés margin-right et margin-left sur h2 et .section p1. 
+On préférera utiliser un div qui contient ces éléments et qui possède la classe "container". */
 h2{
     font-size: 38px;
     margin-right: 300px;
@@ -111,6 +144,9 @@ h2{
     margin-right: 300px;
     margin-left: 300px;
 }
+
+/* Correction : Est ce que c'est utile de préciser la margin à nouveau à 0 alors qu'on a déjà dit que * (tous les éléments HTML de la page) ont pour margin:0px; ? */
+/* Correction : l'image ne prend pas tout l'espace. On utilisera la propriété css : background-image */
 .section2 img{
     margin:0px;
 }
@@ -122,10 +158,13 @@ h2{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    gap:10px;
     align-items: center;
+    gap: 10px;
+    /* Correction : Il manque un ";" à la fin de la ligne. */
     margin:auto
 }
+
+/* Correction : Est ce que c'est utile ici de mettre un display:flex et une flex-direction ?  */
 .section3 ul{
     list-style: none;
     font-size: 28px;
@@ -135,12 +174,19 @@ h2{
     flex-direction: column;
     gap: 15px;
     width: 700px;
+    /* Correction : On préférera utiliser gap (dans l'élément parent) plutôt que margin-bottom pour séparer des frères et soeurs d'un même parent. */
     margin-bottom: 70px;
 }
+
+/* Correction : Est ce que c'est utile de mettre margin:0px; */
+/* Correction : On préférera utiliser la propriété gap sur le parent plutôt que des margin sur les enfants. */
 .section3 h2{
     margin:0px;
     margin-bottom: 50px;
 }
+
+/* Correction : Le bouton a le même style qu'un autre bouton de la page. 
+On utilisera donc la même classe que celle qui décrit l'autre bouton. */
 .section3 a{
     text-decoration: none;
     color: black;
@@ -151,22 +197,28 @@ h2{
     padding-right: 25px;
     border-radius: 5px;
 }
+
+/* Correction : Tu peux ajuster la largeur de tes bordures en utilisant la propriété border-width:1px; */
 .section3 li{
     border-bottom-style: dashed;
+    /* Correction : Il manque un ; au bout de la ligne */
     padding:5px
 }
 .li1{
+    /* Correction : Il manque un ; au bout de la ligne */
     border-top-style: dashed
 }
+
 .section4{
     background-image: url(assets/banniere-logo.png);
-    background-size:cover;
+    background-size: cover;
     height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .section5{
     background-color: black;
     color: white;
@@ -177,27 +229,35 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Correction : Il manque un ; au bout de la ligne */
     gap:20px
 }
 .section5 ul{
     list-style: none;
+    /* Correction : Il manque un ; au bout de la ligne */
     padding:0px
 }
-input,label {
-  margin: 0.4rem 0;
+input, label {
+    margin: 0.4rem 0;
 }
 label {
     font-size: 12px;
     display: block;
-  font:1rem
+    /* Correction : Il manque un ; au bout de la ligne */
+    font:1rem
 }
+
+/* Correction : Si tu veux ici une margin de 0px, 
+Pourquoi ajouter 0.4rem à input dans input, label (ligne 240) ? */
 input{
-    margin:0px;
+    margin: 0px;
     background-color: #f3eaea4a;
     border-style: none;    
     width: 600px;
     height: 25px;
 }
+
+/* Correction : Utiliser uniquement la propriété css margin avec plusieurs paramètres : margin: 0 300px; */
 .section5 h2{
     font-size: 30px;
     margin-right: 300px;
@@ -207,6 +267,9 @@ input{
     color: white;
     font-family: "DM Sans";
 }
+
+/* Correction : le bouton a un style similaire à un autre bouton.
+utiliser alors la même classe. */
 button{
     background-color: white;
     color: black;
@@ -221,6 +284,8 @@ button{
 input[type="message"] {
     height: 250px;
 }
+
+/* Correction : Pourquoi ajouter une marge à toutes les div ? Attention cela ajoute aussi au "sous-div" ? */
 div {
     margin-top: 25px;
 }
