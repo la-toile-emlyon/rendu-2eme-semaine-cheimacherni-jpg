@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Correction : le fichier de style s'appelle "style.css" sans s à style-->
     <link rel="stylesheet" href="styles.css">
+    <!--Correction : attention à l'indentation des balises-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -13,7 +15,9 @@
 
 <body>
     <header>
+        <!--Correction : dans l'usage, on sépare les mots par des tirets dans les noms de classe. On écrira par exemple "div-header"-->
         <div class="divheader">
+            <!--Correction : mets un attribut alt dans ton image pour assurer l'accessibilité-->
             <a href="#"><img src="assets/logo-header.png"></a>
             <nav>
                 <a href="">ACCUEIL</a>
@@ -24,11 +28,22 @@
             </nav>
         </div>
         <section class="hero">
+            <!--Correction : dans l'usage, on sépare les mots par des tirets dans les noms de classe. On écrira par exemple "div-hero"-->
             <div class="divhero">
+                <!--Correction : Ici le <p> et le <h1> sont en fait un seul et même élément. 
+                    On écrira donc <h1>URBAN NIGHT Rap Fest</h1> en utilisant des span : 
+                    <h1><span>URBAN NIGHT</span>Rap Fest</h1> et en mettant du style sur le span (soit avec une classe soit avec un sélecteur particulier 'h1 span')-->
                 <p class="p1">URBAN NIGHT</p>
                 <h1>Rap Fest </h1>
+                <!--Correction : ne pas utiliser les <br> tu peux choisir une largeur spécifique pour forcer les retours à la ligne-->
+                <!--Correction : La balise <strong> a une sémentique particulière. On ne l'utilise que si on veut être référencé dessus.
+                    Si l'élément n'est pas une information sur laquelle on veut être référencée, on utilisera du CSS.-->
+                <!--Correction : p2 n'est pas un nom explicite. On dira plus "p-hero-date-lieu"-->
                 <p class="p2"><strong>04 MAI & 05 MAI</strong><br>LYON - PARC DE GERLAND <br> 7EME</p>
+                <!--Correction : A quoi sert cette div dans la section hero ? à encadrer les boutons donc on pourra dire "div-hero-boutons"-->
                 <div class="divhero2">
+                    <!--Correction : Pareil qu'au dessus pour la balise strong, on utilisera ici du css plutot que la balise strong.-->
+                    <!--Correction : Utiliser des noms explicites pour les boutons : "cta-principal" et "cta-secondaire" pour call-to-action principale et secondaire.-->
                     <a href="" class="a1"><strong>BILLETTERIE</strong></a>
                     <a href="" class="a2"><strong>PLUS D'INFOS</strong></a>
                 </div>
@@ -36,6 +51,7 @@
         </section>
     </header>
     <main>
+        <!--Correction : donner un nom explicite à la classe de la section.-->
         <section class="section1">
             <h2>Plongez au cœur du rythme urbain avec RAPture, le festival de rap qui célèbre la puissance 
             des mots, des beats et des cultures qui les inspirent.</h2>
@@ -44,15 +60,22 @@
             Sur scène, les talents montants côtoient les légendes, pour un week-end où chaque rime fait 
             écho aux histoires de la rue, des rêves et de la liberté d’expression.
             Venez vivre trois jours de pure intensité, là où la musique, la vibe et la culture rap ne font plus qu’un.</p>
+        <!--Correction : on ne reprécise pas la classe dans la balise fermante. On écrite juste </section>-->
         </section class="section1">
 
+        <!--Correction : donner une nom explicite à la section.-->
         <section class="section2">
+            <!--Correction : dans notre cas, l'image n'a pas vraiment d'utilité sémentaique.
+            On placera donc l'image en background css plutôt.-->
             <img src="assets/section-img.png">
         </section>
 
+        <!--Correction : donner un nom explicite à la section.-->
         <section class="section3">
             <h2>LINE UP</h2>
             <ul>
+                <!--Correction : on utilisera la balise strong uniquement quand on souhaite être référencer sur les éléments contenus. 
+                On préférera utiliser <span> et du css si c'est uniquemen du style.-->
                 <li class="li1"><strong>04 MAI</strong> - OMAY LAY</li>
                 <li><strong>04 MAI</strong> - WIZKID</li>
                 <li><strong>04 MAI</strong> - LIL BABY</li>
@@ -65,7 +88,9 @@
             <a href="">BILLETTERIE</a>
         </section>
 
+        <!--Correction : donner un nom explicite à la section : "section-partenaires"-->
         <section class="section4">
+            <!--Correction : donner un nom explicite à la div : "div-section-partenaires"-->
             <div class="divsection4">
                 <img src="assets/spotify.png">
                 <img src="assets/applemusic.png">
@@ -74,13 +99,17 @@
                 <img src="assets/motorola.png">
             </div>
         </section>
+        <!--Correction : donner un nom explicite à la section : "section-formulaire-contact"-->
         <section class="section5">
             <h2>CONTACTEZ NOUS</h2>
             <p>Fill out the booking form below to ask any questions, or reach out to us directly at<br>
+            <!--Correction : on peut utiliser mail dans le l'attribut href afin de faire un lien vers un mail-->
             <a href="">help@raptureclouds.com</a> with any questions or concerns</p>
             <form action="">
-               <ul>
-                <li>
+                <!--Correction : attention à l'indentation pour les li-->
+                <ul>
+                    <li>
+                    <!--Correction : attention à bien séparer les attributs par un espace-->
                     <label for="Full Name">Full Name</label>
                     <input type="text"placeholder="Full Name" required>
                 </li>
@@ -102,10 +131,13 @@
                </div>
             </form>
         </section>
+        <!--Correction : corriger l'indentation du footer.-->
        <footer>
         <div class="container">
+            <!--Correction : donner un nom explicite. Ex : "div-footer-contact"-->
             <div class="div1">
                 <p>Email</p>
+                <!--Correction : on utilise mailto dans le href pour renvoyer directement vers le mail.-->
                 <a href="">help@raptureclouds.com</a>
             </div>
             <div class="div8">
@@ -120,8 +152,10 @@
                 </form>  
             </div>    
         </div>
+        <!--Correction : donner un nom explicite. Ex : "div-footer-legals"-->
         <div class="div2">
             <p>Copyright 2025 Rapture - Music festival</p>
+            <!--Correction : séparer les mots par un "-". Ex : "div-liens-footer"-->
             <div class="lienfooter">
                 <a href="">Terms & Conditions for Event</a>
                 <a href="">Privacy Policy</a>
