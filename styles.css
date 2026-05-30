@@ -389,3 +389,8 @@ form ul{
     margin-left: 40px;
     margin-right: 40px;
 }
+
+.listeetimg h2{
+    text-align: left;
+    padding-left: 0px;
+}
