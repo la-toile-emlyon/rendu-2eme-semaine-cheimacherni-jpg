@@ -2,7 +2,7 @@
 }
 
 header{
-    background-image: url(../rendu-2eme-semaine-cheimacherni-jpg/assets/image-header.png);
+    background-image: url(assets/image-header.png);
     background-size:cover;
     min-height: 120vh;
 }
