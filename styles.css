@@ -4,7 +4,7 @@
 header{
     background-image: url(assets/image-header.png);
     background-size:cover;
-    min-height: 120vh;
+    min-height: fit-content;
 }
 /* Correction : on a déjà utilisé * {margin:0px;} donc rappeler le margin:0px sur body en plus est inutile. */
 body{
